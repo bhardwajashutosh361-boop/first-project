@@ -1,0 +1,41 @@
+import random 
+subjects = [
+    "yash",
+    "ashutosh",
+    "om jotishi",
+    "namirita",
+    "anuj soni",
+    "piyush"
+]
+actions = [
+        "dance with",
+            "eats with",
+            "runing ",
+            "singing",
+            "waticing",
+            " doing yoga",
+            "bathing"
+
+]
+places_things = [
+
+    "in the park",
+    "in home",
+    "in collage",
+    "in bike",
+    "in bus"
+    "in bedroom"
+
+]
+
+while True:
+    subject = random.choice(subjects)
+    action = random.choice(actions)
+    place_thing = random.choice(places_things)
+
+    headline = f"BREAKING NEWS : {subject}  {action}  {place_thing}"
+    print("\n" + headline)
+
+    user_input = input("\n do you want another headline? (yes/no)").strip().lower()
+    if user_input == "no":
+        break 
